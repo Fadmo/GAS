@@ -19,6 +19,5 @@ protected:
 
 	//2.2 example
 	UPROPERTY(EditAnywhere, Category = "Combat")
-	TObjectPtr<USkeletalMeshComponent> Weapon;
-
+	TObjectPtr<USkeletalMeshComponent> Weapon; //TObjectPtr is a smart pointer that can be null it is recommended to use it instead of a raw pointer and has the benefit of being garbage collected
 };
